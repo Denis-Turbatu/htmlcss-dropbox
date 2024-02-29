@@ -46,14 +46,12 @@
     width: 60%;
     /* debug */
     background-color: blue;
-    height: 450px;
 }
 
 .container-40pct {
     width: 40%;
     /* debug */
     background-color: green;
-    height: 450px;
 }
 
 /* HEADER */
@@ -152,6 +150,54 @@ header{
     height: 250px;
 }
 
+/* partnership gallery */
+
+.partnership-gallery {
+    margin-top: 100px;
+    /* debug */
+    background-color: lightblue;
+}
+
+.g-image{
+    width: calc(100% / 3);
+    /* debug */
+    height: 400px;
+    background-color: lightseagreen;
+}
+
+.center {
+    /* debug */
+    background-color: grey;
+}
+
+.free-trial{
+    /* debug */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 200px;
+}
+
+/* faq */
+
+.faq {
+    margin-top: 100px;
+    /* debug */
+    height: 450px;
+    background-color: purple;
+}
 
 /* FOOTER */
 
+footer{
+    width: 100%;
+    /* debug */
+    margin-top: 100px;
+    padding: 30px;
+    background-color: black;
+}
+
+.foot-nav{
+    /* debug */
+    background-color: brown;
+    height: 300px;
+}
