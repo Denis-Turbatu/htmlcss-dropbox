@@ -1,0 +1,103 @@
+/* ROOT */
+
+:root{
+
+}
+
+/* RESET */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* UTILITY */
+
+.flex{
+    display: flex;
+}
+
+.container-maxw-1180{
+    width: 80%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.container-maxw-1100 {
+    width: 70%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    justify-content: space-between;
+    /* debug */
+    background-color: green;
+}
+
+.h-navbar{
+    width: 35%;
+    /* debug */
+    height: 50px;
+    background-color: red;
+}
+
+/* HERO */
+
+.hero{
+    padding-top: 50px;
+    /* debug */
+    background-color: lightblue;
+    height: 600px;
+}
+
+.hero-content{
+    /* debug */
+    background-color: lightsalmon;
+    height: 550px;
+}
+
+/* MAIN */
+
+/* business-plan */
+
+.business-plan{
+    margin-top: 50px;
+}
+
+.head-bp{
+    width: 100%;
+    /* degub */
+    height: 100px;
+    background-color: violet;
+}
+
+.main-bp {
+    width: 100%;
+    justify-content: space-between;
+    /* degub */
+    background-color: lightseagreen;
+}
+
+.main-bp .col{
+    width: calc(100% / 3 - 16px);
+    margin: 20px 0;
+    /* degub */
+    background-color: lightgrey;
+    height: 650px;
+}
+
+.foot-bp {
+    width: 100%;
+    /* degub */
+    height: 150px;
+    background-color: violet;
+}
+
+
+/* FOOTER */
+
