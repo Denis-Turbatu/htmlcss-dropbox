@@ -14,6 +14,10 @@
 
 /* UTILITY */
 
+.m-t-100{
+    margin-top: 100px;
+}
+
 .flex{
     display: flex;
 }
@@ -28,6 +32,28 @@
     width: 70%;
     max-width: 1100px;
     margin: 0 auto;
+}
+
+.col {
+    width: calc(100% / 3 - 16px);
+    margin: 20px 0;
+    /* degub */
+    background-color: lightgrey;
+    height: 400px;
+}
+
+.container-60pct {
+    width: 60%;
+    /* debug */
+    background-color: blue;
+    height: 450px;
+}
+
+.container-40pct {
+    width: 40%;
+    /* debug */
+    background-color: green;
+    height: 450px;
 }
 
 /* HEADER */
@@ -66,7 +92,9 @@ header{
 /* business-plan */
 
 .business-plan{
-    margin-top: 50px;
+    /* debug */
+    border: solid 1px black;
+    margin-top: 100px;
 }
 
 .head-bp{
@@ -84,10 +112,7 @@ header{
 }
 
 .main-bp .col{
-    width: calc(100% / 3 - 16px);
-    margin: 20px 0;
     /* degub */
-    background-color: lightgrey;
     height: 650px;
 }
 
@@ -96,6 +121,35 @@ header{
     /* degub */
     height: 150px;
     background-color: violet;
+}
+
+/* partnership */
+
+.partnership{
+    /* debug */
+    background-color: red;
+    height: 450px;
+    border: solid 1px black;
+    margin-top: 100px;
+}
+
+/* task */
+
+.task{
+    /* debug */
+    margin-top: 100px;
+    background-color: lightgoldenrodyellow;
+}
+
+.task-cards{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.task .container-60pct {
+    margin-top: 100px;
+    /* debug */
+    height: 250px;
 }
 
 
