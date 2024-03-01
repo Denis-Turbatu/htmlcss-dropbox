@@ -8,7 +8,7 @@
     --black-color: #000000;
     --grey-color: #999a9b;
     --green-color: #a2d39b;
-    --lightgreen-color: #d1eacd;
+    --lightgrey-color: #f5f5f5;
     --cyan-color: #0093ce;
     --red-color: #ff1c1c;
     --yellow-color: #ffd830;
@@ -294,7 +294,7 @@ hr {
     line-height: 3rem;
 }
 
-.partner-btn {
+.light-btn {
     background-color: var(--white-color);
     color: var(--black-color);
     border: solid 1px var(--black-color);
@@ -318,18 +318,13 @@ hr {
 
 /* partnership gallery */
 
-.partnership-gallery {
-    /* margin-top: 100px; */
-    /* debug */
-    background-color: lightblue;
+.partnership-gallery{
+    background-color: var(--skyblue-color);
 }
 
 .g-image {
     width: var(--square-measure);
     flex-wrap: wrap;
-    /* debug */
-    height: var(--square-measure);
-    background-color: lightseagreen;
 }
 
 .row {
@@ -341,33 +336,59 @@ hr {
     aspect-ratio: 1/1;
 }
 
-.logos img{
-    fill: var(--white-color);
-}
-
-.logos:nth-child(1) {
+.right .logos:nth-child(1) {
     background-color: var(--green-color);
 }
 
-.logos:nth-child(2) {
+.right .logos:nth-child(2) {
     background-color: var(--violet-color);
 }
 
-.logos:nth-child(1) {
-    background-color: var(--green-color);
+.right .logos:nth-child(3) {
+    background-color: var(--cyan-color);
 }
+
+.right .logos:nth-child(4) {
+    background-color: var(--red-color);
+}
+
+.left .logos:nth-child(1) {
+    background-color: var(--darkred-color);
+}
+.left .logos:nth-child(2) {
+    background-color: var(--skyblue-color);
+}
+
+.left .logos:nth-child(3) {
+    background-color: var(--darkblue-color);
+}
+
+.left .logos:nth-child(4) {
+    background-color: var(--yellow-color);
+}
+
+
+.designit-center {
+    width: 50%;
+}
+
 
 .center {
     width: 100%;
-    /* debug */
-    background-color: grey;
+    background-color: var(--lightgrey-color);
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    line-height: 3rem;
+    overflow-y: auto;
 }
 
-.free-trial {
-    /* debug */
-    padding-top: 15px;
-    padding-bottom: 15px;
-    height: 200px;
+.container-free-trial{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 /* faq */
