@@ -341,6 +341,22 @@ hr {
     aspect-ratio: 1/1;
 }
 
+.logos img{
+    fill: var(--white-color);
+}
+
+.logos:nth-child(1) {
+    background-color: var(--green-color);
+}
+
+.logos:nth-child(2) {
+    background-color: var(--violet-color);
+}
+
+.logos:nth-child(1) {
+    background-color: var(--green-color);
+}
+
 .center {
     width: 100%;
     /* debug */
