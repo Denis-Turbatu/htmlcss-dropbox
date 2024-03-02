@@ -8,10 +8,10 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="flex">
-      <div class="h-navbar flex">
-        <img class="external-item" src="./img/logo-small.png" alt="logo" />
-        <ul class="anchor-items flex">
+    <header class="flex spc-btw w-100pct">
+      <div class="h-navbar gap-30 flex">
+        <img src="./img/logo-small.png" alt="logo" />
+        <ul class="anchor-items gap-30 flex">
           <li>
             <a href="">Perchè Dropbox</a>
           </li>
@@ -21,24 +21,24 @@
           <li><a href="">Piani e Prezzi</a></li>
         </ul>
       </div>
-      <div class="h-navbar right-nav flex">
-        <ul class="anchor-items flex">
+      <div class="h-navbar gap-30 flex">
+        <ul class="anchor-items gap-30 flex">
           <li><a href="">Supporto</a></li>
           <li><a href="">Contatta l'ufficio vendite</a></li>
           <li><a href="">Accedi</a></li>
         </ul>
-        <button class="external-item button">Inizia</button>
+        <button class="button">Inizia</button>
       </div>
     </header>
     <!-- /HEADER -->
 
     <!-- HERO -->
-    <div class="hero p-t-80">
+    <div class="hero">
       <section class="hero-content container-maxw-1180">
         <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-        <div class="hero-container flex">
-          <div class="hero-description">
-            <p class="m-b-30">
+        <div class="flex">
+          <div class="container-30pct">
+            <p class="m-b-30 l-h-25">
               Finalmente tutti gli strumenti, contenuti e collaboratori sono
               accessibili dallo stesso posto. Dropbox Business è più di uno
               spazio di archivazione sicuro: è un modo intelligente e integrato
@@ -48,8 +48,8 @@
             <p class="m-b-50">Annulla in qualsiasi momento</p>
             <i class="fa-solid fa-arrow-down m-b-30"></i>
           </div>
-          <div class="hero-jumbo-container">
-            <div class="hero-jumbo">
+          <div class="container-70pct rel-jumbo-container">
+            <div class="abs-jumbo-container">
               <img src="./img/jumbo.png" alt="jumbo" />
             </div>
           </div>
@@ -61,19 +61,25 @@
     <!-- MAIN -->
     <main>
       <!-- business-plan -->
-      <div class="business-plan container-maxw-1100 m-t-170">
-        <div class="head-bp p-b-50">
+      <div class="container-maxw-1100 m-t-170">
+        <div class="w-100pct p-b-50">
+          <!-- titolo fatturazione -->
           <h2 class="p-b-50">Trova il tuo piano business che fa per te</h2>
+          <!-- input radio -->
           <span>
-            <input type="radio" id="fat-mensilie" />
-            <label class="m-l-10" for="fat-mensile">Fatturazione mensile</label>
+            <input type="radio" id="fatturazione-mensile" checked="false" />
+            <label class="m-l-10" for="fatturazione-mensile"
+              >Fatturazione mensile</label
+            >
           </span>
           <span class="m-l-10">
-            <input type="radio" id="fat-annuale" notchecked />
-            <label class="m-l-10" for="fat-annuale">Fatturazione annuale</label>
+            <input type="radio" id="fatturazione-annuale" checked="false" />
+            <label class="m-l-10" for="fatturazione-annuale"
+              >Fatturazione annuale</label
+            >
           </span>
         </div>
-        <div class="main-bp flex">
+        <div class="w-100pct main-bus-plan spc-btw flex">
           <!-- card -->
           <div class="col">
             <!-- header card -->
@@ -84,9 +90,9 @@
               </span>
             </div>
             <!-- main card -->
-            <div class="mf-card">
-              <h3 class="plan-name">Professional</h3>
-              <p class="plan-price">
+            <div class="main-card">
+              <h3 class="m-b-30">Professional</h3>
+              <p class="m-b-30">
                 <strong>€12.00 </strong>
               </p>
               <p class="plan-validity">/mese</p>
@@ -140,9 +146,9 @@
               </span>
             </div>
             <!-- main card -->
-            <div class="mf-card">
-              <h3 class="plan-name">Advanced</h3>
-              <p class="plan-price">
+            <div class="main-card">
+              <h3 class="m-b-30">Advanced</h3>
+              <p class="m-b-30">
                 <strong> €18.00 </strong>
               </p>
               <p class="plan-validity">/utente/mese</p>
@@ -212,9 +218,9 @@
               </span>
             </div>
             <!-- main card -->
-            <div class="mf-card">
-              <h3 class="plan-name">Enterprise</h3>
-              <p class="plan-price">
+            <div class="main-card">
+              <h3 class="m-b-30">Enterprise</h3>
+              <p class="m-b-30">
                 <strong> Contattaci </strong>
               </p>
               <p class="plan-validity">-</p>
@@ -264,8 +270,8 @@
             </div>
           </div>
         </div>
-        <div class="foot-bp">
-          <div class="col foot-col">
+        <div class="w-100pct">
+          <div class="col w-100pct">
             <!-- header card -->
             <div class="h-card flex">
               <span>
@@ -274,10 +280,10 @@
               </span>
             </div>
             <!-- main card -->
-            <div class="mf-card flex">
+            <div class="main-card flex">
               <div class="container-70pct">
-                <h3 class="plan-name">Enterprise</h3>
-                <p class="plan-price">
+                <h3 class="m-b-30">Enterprise</h3>
+                <p class="m-b-30">
                   <strong> Contattaci </strong>
                 </p>
                 <p>
@@ -295,30 +301,33 @@
       </div>
       <!-- /business-plan -->
       <!-- partnership -->
-      <div class="partnership container-maxw-1100 flex m-t-170">
+      <div class="container-maxw-1100 flex m-t-170">
         <div class="container-60pct">
-          <img src="./img/partner.png" alt="" />
+          <img src="./img/partner.png" alt="partner" />
         </div>
-        <section class="part-desc container-40pct flex">
-          <h3 class="plan-name">Entra in contatto con un partner Dropbox</h3>
+        <section class="part-desc gap-30 l-h-25 container-40pct flex">
+          <h3 class="m-b-30">Entra in contatto con un partner Dropbox</h3>
           <p>
             Trova un partner Dropbox e HelloSign di fiducia. Ottieni la
             soluzione e i servizi necessari per raggiunere i tuoi obiettivi
             aziendali, tra cui implementazione, integrazione, gestione e
             supporto continui.
           </p>
-          <button class="button partner-btn m-b-30">Trova un partner</button>
+          <button class="button light-btn m-b-30">Trova un partner</button>
         </section>
       </div>
       <!-- partnership -->
       <!-- task -->
-      <div class="task container-maxw-1100 m-t-170">
+      <div class="container-maxw-1100 m-t-170">
         <h2 class="p-b-50">Esegui più operazioni con Dropbox Business</h2>
-        <div class="task-cards flex">
+        <div class="spc-btw f-wrap flex">
           <div class="col no-border">
-            <img src="./img/business-feature-switching-tools.png" alt="" />
-            <h2 class="p-b-50">Passa di meno da uno strumento all'altro</h2>
-            <p>
+            <img
+              src="./img/business-feature-switching-tools.png"
+              alt="switching-tools"
+            />
+            <h3 class="p-b-50">Passa di meno da uno strumento all'altro</h3>
+            <p class="l-h-25">
               Porta al termine le attività quotidiane con un solo strumento.
               Crea, modifica e condividi contenuti cloud da Documenti, Fogli,
               Presentazioni di Google, file Microsoft Office e Dropbox Paper
@@ -326,9 +335,12 @@
             </p>
           </div>
           <div class="col no-border">
-            <img src="./img/business-feature-send-files-it.png" alt="" />
-            <h2 class="p-b-50">Passa di meno da uno strumento all'altro</h2>
-            <p>
+            <img
+              src="./img/business-feature-send-files-it.png"
+              alt="send-files"
+            />
+            <h3 class="p-b-50">Passa di meno da uno strumento all'altro</h3>
+            <p class="l-h-25">
               Porta al termine le attività quotidiane con un solo strumento.
               Crea, modifica e condividi contenuti cloud da Documenti, Fogli,
               Presentazioni di Google, file Microsoft Office e Dropbox Paper
@@ -336,9 +348,12 @@
             </p>
           </div>
           <div class="col no-border">
-            <img src="./img/business-feature-coordinate-it.png" alt="" />
-            <h2 class="p-b-50">Passa di meno da uno strumento all'altro</h2>
-            <p>
+            <img
+              src="./img/business-feature-coordinate-it.png"
+              alt="coordinate"
+            />
+            <h3 class="p-b-50">Passa di meno da uno strumento all'altro</h3>
+            <p class="l-h-25">
               Porta al termine le attività quotidiane con un solo strumento.
               Crea, modifica e condividi contenuti cloud da Documenti, Fogli,
               Presentazioni di Google, file Microsoft Office e Dropbox Paper
@@ -346,9 +361,12 @@
             </p>
           </div>
           <div class="col no-border">
-            <img src="./img/business-feature-integrations-it.png" alt="" />
-            <h2 class="p-b-50">Passa di meno da uno strumento all'altro</h2>
-            <p>
+            <img
+              src="./img/business-feature-integrations-it.png"
+              alt="integrations"
+            />
+            <h3 class="p-b-50">Passa di meno da uno strumento all'altro</h3>
+            <p class="l-h-25">
               Porta al termine le attività quotidiane con un solo strumento.
               Crea, modifica e condividi contenuti cloud da Documenti, Fogli,
               Presentazioni di Google, file Microsoft Office e Dropbox Paper
@@ -356,9 +374,12 @@
             </p>
           </div>
           <div class="col no-border">
-            <img src="./img/business-feature-multi-device.png" alt="" />
-            <h2 class="p-b-50">Passa di meno da uno strumento all'altro</h2>
-            <p>
+            <img
+              src="./img/business-feature-multi-device.png"
+              alt="multi-device"
+            />
+            <h3 class="p-b-50">Passa di meno da uno strumento all'altro</h3>
+            <p class="l-h-25">
               Porta al termine le attività quotidiane con un solo strumento.
               Crea, modifica e condividi contenuti cloud da Documenti, Fogli,
               Presentazioni di Google, file Microsoft Office e Dropbox Paper
@@ -366,9 +387,9 @@
             </p>
           </div>
           <div class="col no-border">
-            <img src="./img/business-feature-security.png" alt="" />
-            <h2 class="p-b-50">Passa di meno da uno strumento all'altro</h2>
-            <p>
+            <img src="./img/business-feature-security.png" alt="security" />
+            <h3 class="p-b-50">Passa di meno da uno strumento all'altro</h3>
+            <p class="l-h-25">
               Porta al termine le attività quotidiane con un solo strumento.
               Crea, modifica e condividi contenuti cloud da Documenti, Fogli,
               Presentazioni di Google, file Microsoft Office e Dropbox Paper
@@ -384,10 +405,10 @@
         </section>
       </div>
       <!-- /task -->
-      <!-- partnership gallery -->
-      <div class="partnership-gallery m-t-170">
-        <div class="gallery flex">
-          <div class="g-image right flex">
+      <!-- CTA -->
+      <div class="cta m-t-170">
+        <div class="flex">
+          <div class="cta-image right flex">
             <div class="row logos">
               <img src="./img/designit.svg" alt="designit" />
             </div>
@@ -401,9 +422,9 @@
               <img src="./img/topps.svg" alt="" />
             </div>
           </div>
-          <div class="g-image flex">
-            <div class="row logos center flex">
-              <div class="designit-center">
+          <div class="cta-image flex">
+            <div class="row logos center flex w-100pct l-h-25">
+              <div class="w-50pct">
                 <img src="./img/designit-center.svg" alt="" />
               </div>
               <hr />
@@ -416,7 +437,7 @@
               </p>
             </div>
           </div>
-          <div class="g-image left flex">
+          <div class="cta-image left flex">
             <div class="row logos">
               <img src="./img/world_bicycle_relief.svg" alt="" />
             </div>
@@ -435,20 +456,20 @@
           <div class="container-free-trial flex">
             <h2>Porta Dropbox Business nella tua azienda.</h2>
           </div>
-          <div class="container-free-trial flex">
+          <div class="container-free-trial w-50pct flex">
             <button class="button light-btn">
               Inizia la tua prova gratuita
             </button>
           </div>
         </div>
       </div>
-      <!-- /partnership gallery -->
-      <!-- faq -->
-      <div class="faq container-maxw-1100 m-t-170">
+      <!-- /CTA -->
+      <!-- FAQ -->
+      <div class="container-maxw-1100 m-t-170">
         <h2 class="m-b-50">Domande Frequenti</h2>
-        <ul class="questions">
+        <ul>
           <li class="list-item">
-            <div class="item flex">
+            <div class="item flex spc-btw">
               <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </span>
@@ -457,13 +478,15 @@
               </span>
             </div>
             <div class="item">
-              Ipsa nihil in tenetur quas rerum iste reiciendis! Repellendus
-              amet, beatae voluptatum quasi, dolor neque hic nisi quae magnam
-              ducimus quibusdam tenetur.
+              <p>
+                Ipsa nihil in tenetur quas rerum iste reiciendis! Repellendus
+                amet, beatae voluptatum quasi, dolor neque hic nisi quae magnam
+                ducimus quibusdam tenetur.
+              </p>
             </div>
           </li>
           <li class="list-item">
-            <div class="item flex">
+            <div class="item flex spc-btw">
               <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </span>
@@ -472,13 +495,15 @@
               </span>
             </div>
             <div class="item">
-              Ipsa nihil in tenetur quas rerum iste reiciendis! Repellendus
-              amet, beatae voluptatum quasi, dolor neque hic nisi quae magnam
-              ducimus quibusdam tenetur.
+              <p>
+                Ipsa nihil in tenetur quas rerum iste reiciendis! Repellendus
+                amet, beatae voluptatum quasi, dolor neque hic nisi quae magnam
+                ducimus quibusdam tenetur.
+              </p>
             </div>
           </li>
           <li class="list-item">
-            <div class="item flex">
+            <div class="item flex spc-btw">
               <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </span>
@@ -487,14 +512,16 @@
               </span>
             </div>
             <div class="item">
-              Ipsa nihil in tenetur quas rerum iste reiciendis! Repellendus
-              amet, beatae voluptatum quasi, dolor neque hic nisi quae magnam
-              ducimus quibusdam tenetur.
+              <p>
+                Ipsa nihil in tenetur quas rerum iste reiciendis! Repellendus
+                amet, beatae voluptatum quasi, dolor neque hic nisi quae magnam
+                ducimus quibusdam tenetur.
+              </p>
             </div>
           </li>
         </ul>
       </div>
-      <!-- /faq -->
+      <!-- /FAQ -->
     </main>
     <!-- /MAIN -->
 
