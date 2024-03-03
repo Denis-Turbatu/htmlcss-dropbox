@@ -194,6 +194,25 @@ header {
     padding: 1.5625em 1.875em;
 }
 
+.anchor-items li a {
+    position: relative;
+}
+
+.anchor-items li a:after {
+    content: '';
+    position: absolute;
+    background-color: var(--blue-color);
+    left: 0;
+    top: 100%;
+    height: 3px;
+    width: 0%;
+    transition: 0.3s ease-out;
+}
+
+.anchor-items li a:hover:after {
+    width: 100%;
+}
+
 /* HERO */
 
 .hero {
@@ -382,7 +401,7 @@ input[type="radio"]:checked+label:before {
 
 .list-item .item:last-child p {
     opacity: 0;
-    transition: opacity 1s linear;
+    transition: opacity 0.5s linear;
 }
 
 .list-item:hover .item:last-child {
